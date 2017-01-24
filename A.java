@@ -14,6 +14,7 @@ public class A {
 		readGraph(file);
 	}
 
+<<<<<<< HEAD
 	private void readGraph(File file) throws FileNotFoundException, IOException {
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String line;
@@ -36,6 +37,10 @@ public class A {
 			}
 		}
 		br.close();
+=======
+	private void readGraph(File file) {
+		// TODO
+>>>>>>> 3eeb12f... Fix layout in B.java
 	}
 	
 	public int[] getVertices() {
