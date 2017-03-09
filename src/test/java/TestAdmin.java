@@ -71,5 +71,13 @@ public class TestAdmin {
         assertEquals(this.admin.getClassCapacity("Name", 2018), 5);
     }
 
-}
+    @Test
+    public void testMakeClass7() {
+       //can have capacity 0
+        this.admin.createClass("Test", 2017, "Instructor", 5);
+        this.admin.changeCapacity("Test", 2017, 0);
+        assertTrue(this.admin.getClassCapacity("Test", 2017) == 0);
+        }
+    }
+
 
